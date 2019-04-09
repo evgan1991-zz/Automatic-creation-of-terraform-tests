@@ -1,0 +1,5 @@
+
+# Terraform files in examples-folder
+examples/.terraform
+examples/terraform.tfstate
+examples/terraform.tfvars
