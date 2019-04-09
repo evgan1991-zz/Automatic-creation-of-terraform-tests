@@ -40,7 +40,7 @@ func main() {
 	for i := 0; i < len(vars_list); i++ {
 		text_addition(arg + "/examples/main.tf", "  " + vars_list[i] + spase_generator(bigest_len - len(vars_list[i])) + " = \"${var." + vars_list[i] + "}\"\n")
 	}
-	text_addition(arg  + "/examples/main.tf", "  source" + spase_generator(bigest_len - len("source")) + " = \"../\"\n}")
+	text_addition(arg  + "/examples/main.tf", "  source" + spase_generator(bigest_len - len("source")) + " = \"../\"\n}\n")
 
 
 	// making examples/outputs.tf
