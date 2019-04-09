@@ -30,7 +30,7 @@ go test ~./path/to/your/terraform/module/test
 From the links you can see what will be added to these files. If you apply the script several times, this part will be added to .travis and .gitignore several times.
 
 
-## [Automatically_generated_test.go](templates/automatically_generated_test)
+## [Automatically_generated_test.go](templates/test)
 In order to avoid a name conflict during execution, a random line of text is added to the name of the resource. By default, the name is set by the parameter "name" in the description of the structure that is passed to the module as input parameters.
 
 ```hcl
@@ -39,7 +39,7 @@ Vars: map[string]interface{}{
     "name"      : "test_name_" + randSeq(10),
 },
 ```
-If the variable name or any other identifier of your resource has a different name, change this name in [automatically_generated_test](templates/automatically_generated_test)
+If the variable name or any other identifier of your resource has a different name, change this name in [automatically_generated_test](templates/test)
 
 
 ## Terraform versions
