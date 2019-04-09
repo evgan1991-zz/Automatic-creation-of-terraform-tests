@@ -26,6 +26,7 @@ go test ~./path/to/your/terraform/module/test
 ## Files to be changed
  * [.travis.yml](templates/travis)
  * [.gitignore](templates/gitignore)
+
 From the links you can see what will be added to these files. If you apply the script several times, this part will be added to .travis and .gitignore several times.
 
 
